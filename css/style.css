@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+header{
+    background-color: #212343;
+    width: 100%;
+    height: 60px;
+}
+.cabecalho{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: inline-block;
+    padding-left: 10%;
+}
+
+section.text-and-form{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/header_bg.png);
+}
+.section-center{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+.campo-form{
+    width: 400px;
+    height: calc(100% + 30px);
+    padding: 30px;
+    position: relative;
+    top: -15px;
+    background-color: rgba(255,255,255, 0.7);
+    float: right;
+    border: 3px solid #292c4b;
+    border-radius: 10px;
+    box-shadow: 0 2px rgba(0,0,0,0.5);
+}
+.campo-form > h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    color: #212343;
+
+}
+
+.campo-form > form{
+    margin-top: 10px;
+}
+.campo-form > form > label{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #212343;
+}
+.campo-form > form > input[type="text"]{
+    width: 100%;
+    height: 35px;
+    font-size: 17px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border: 0;  
+}
+.campo-form > form > input[type="text"]:focus{
+    outline-color: #212343;
+}
+
+
+.submit-button{
+    height: 100%;
+    margin-top: 60px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+form > .submit-button >input[type=submit]{
+    background-color: #212343;
+    color: white;
+    width: 80%;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form > .submit-button >input[type=submit]:hover{
+    background-color: #4a4e8b;
+}
+
+.campo-top{
+    display: inline-block;
+}
+
+.campo-info{
+    width: 500px;
+    height: 170px;
+    background-color: rgba(33, 35, 67, 0.98);
+    list-style-position: inside;
+    margin-top: 200px;
+    padding: 20px;
+    border: 2px solid #292c4b;
+    border-radius: 10px;
+}
+.campo-info > ul > li{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+section.text2{
+    width: 100%;
+    height: auto;
+    background-color: rgb(200, 200, 200);
+    padding: 40px 40px;
+}
+
+
+
+.center-text2 > h1{
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    border: 3px solid #212343;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0 , 0, 0.6);
+}
+.text2 > .center-text2{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.arrow{
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/arrow.png);
+    position: relative;
+    bottom: -70px;
+    margin: 0 auto;
+}
+
+.text3 > .center-text3 > h1{
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    border: 3px solid #212343;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0 , 0, 0.6);
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.text3 > .center-text3{
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+.text3 > .center-text3 > .teachers{
+    margin-top: 60px;
+    margin-right: 40px;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 100px;
+}
+.text3 > .center-text3 > .teachers > .text-text3{
+    margin: 0 auto;
+    width: 400px;
+}
+
+footer{
+    border-top: 5px solid #212343;
+    padding: 30px;
+}
+footer p{
+    text-align: center;
+    color: #292c4b;
+}
+
+
+
+@media screen and (max-width: 1346px){
+    .text3 > .center-text3 > .teachers:nth-of-type(1) , .text3 > .center-text3 > .teachers:nth-of-type(2){
+        width: 40%;
+}
+
+    .text3 > .center-text3 > .teachers:last-of-type{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .text3 > .center-text3 > .teachers > .text-text3{
+        margin: 0 auto;
+        width: 90%;
+        max-width: 700px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    header{
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+
+
+    .campo-form{
+        display: inline-block;
+        position: relative;
+        width: 350px;
+        height: 90%;
+        vertical-align: middle;
+        padding: 20px;
+        position: relative;
+        top: 40px;
+        background-color: rgba(255,255,255, 0.7);
+        border: 3px solid #292c4b;
+        border-radius: 10px;
+        box-shadow: 0 2px rgba(0,0,0,0.5);
+    }
+    .section-center{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .section-center{
+        text-align: center;
+    }
+
+    .cabecalho{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .campo-info{
+        width: 99%;
+        max-width: 600px;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 4%;
+        text-align: left;
+    }
+
+    .campo-form{
+        width: 90%;
+        max-width: 350px;
+        position: static;
+        margin-bottom: 30px;
+        float: none;
+        height: 63%;
+
+    }
+
+    section.text-and-form{
+        background-size: cover;
+        height: 800px
+    }
+
+    .text2 > .center-text2{
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .text3 > .center-text3 > .teachers:nth-of-type(1) , .text3 > .center-text3 > .teachers:nth-of-type(2){
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .text3 > .center-text3 > .teachers:last-of-type{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .text3 > .center-text3 > .teachers > .text-text3{
+        margin: 0 auto;
+        width: 90%;
+        max-width: 700px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 499px){
+    section.text-and-form{
+        height: auto;
+    }
+    
+}
